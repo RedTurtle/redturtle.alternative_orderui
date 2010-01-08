@@ -6,9 +6,19 @@
     <!-- Folder contents -->
     <browser:page
         for="OFS.interfaces.IFolder"
-        class="plone.app.content.browser.foldercontents.FolderContentsView"
+        class=".foldercontents.FolderContentsView"
         name="folder_contents"
         template="foldercontents.pt"
         permission="cmf.ListFolderContents" />        
+
+    <browser:resource
+        name="move_16x16.gif"
+        file="move_16x16.gif"
+        />
+
+    <browser:resource
+        name="ordersupportui.js"
+        file="ordersupportui.js"
+        />
 
 </configure>
