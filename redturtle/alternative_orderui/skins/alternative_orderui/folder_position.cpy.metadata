@@ -2,5 +2,5 @@
 title = Order items
 
 [actions]
-action.failure=traverse_to:string:folder_contents
-action.success=redirect_to:string:folder_contents
+action.failure=redirect_to:python:'folder_contents' + ((object.REQUEST.get('show_all','') and 'folder_contents?show_all=true') or 'folder_contents')
+action.success=redirect_to:python:'folder_contents' + '?pagenumber=' + object.REQUEST.get('pagenumber','1') + ((object.REQUEST.get('show_all','') and '&show_all=true') or '')
