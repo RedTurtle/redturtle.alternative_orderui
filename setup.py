@@ -13,6 +13,7 @@ setup(name='redturtle.alternative_orderui',
         "Framework :: Plone",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "Development Status :: 3 - Alpha",
         ],
       keywords='plone folder_contents order',
       author='RedTurtle Technology',
@@ -29,12 +30,6 @@ setup(name='redturtle.alternative_orderui',
       ],
       entry_points="""
       # -*- Entry points: -*-
-
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
-
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
       """,
       paster_plugins = ["ZopeSkel"],
       )
