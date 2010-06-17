@@ -2,7 +2,7 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 
  <javascript cacheable="True"
-             compression="full"
+             compression="safe"
              cookable="True"
              enabled="True"
              id="++resource++ordersupportui.js"
