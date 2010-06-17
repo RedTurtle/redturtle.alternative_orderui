@@ -14,7 +14,7 @@ delta = int(delta)
 
 position=position.lower()
 
-if   position=='up':
+if position=='up':
     context.moveObjectsUp(id, delta=delta)
 elif position=='down':
     context.moveObjectsDown(id, delta=delta)

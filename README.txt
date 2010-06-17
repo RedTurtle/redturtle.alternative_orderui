@@ -2,17 +2,17 @@ Introduction
 ============
 
 An alternative *folder_contents* forms, that disable someway KSS ordering and show another fast way
-to reorder items (less cool, but this is working most of the time).
+to reorder items (less and less cool, but this is working most of the time).
 
 Use this only when you (or your users) experience some problem with KSS ordering (not always this happens,
-but happens...).
+but happens...). If no-one report a problem with the basic Plone drag&drop sort mechanism, you don't need
+this product.
 
 TODO
 ====
 
-* Some Plone code customized can be not touched, for sure.
 * Tests on Plone 4
-* Use jQuery Tools features if installed
+* Use jQuery Tools features if installed instead of the ugly Javascript confirm
 * Find a KSS way to disable KSS
 
 Credits

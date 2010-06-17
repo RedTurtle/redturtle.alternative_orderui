@@ -13,3 +13,11 @@
 #foldercontents-show-batched:click {
 	evt-click-preventdefault: False;
 }
+
+#foldercontents-selectall-completebatch:click {
+	evt-click-preventdefault: False;
+}
+
+#foldercontents-clearselection:click {
+	evt-click-preventdefault: False;
+}

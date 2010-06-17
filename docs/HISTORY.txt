@@ -6,6 +6,7 @@ Changelog
 
 * added z3c.autoinclude support [keul]
 * i18n Javascript support [keul]
+* removed a lot of customization. not really needed [keul] 
 
 0.1.0 Unreleased (2010-01-11)
 -----------------------------
