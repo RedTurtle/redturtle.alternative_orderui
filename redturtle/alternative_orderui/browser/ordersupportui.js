@@ -54,7 +54,7 @@ jq(document).ready(function () {
 			
 			var el = jq(this);
 			var elId = el.parents("tr:first").children("td:first").find(":checkbox").attr("id").replace("cb_","");
-			var title = el.parents("tr:first").children("td:eq(1)").find("a").text().strip();
+			var title = el.parents("tr:first").children("td:eq(1)").find("a").text().trim();
 			el.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
 			                  +'<img alt="" src="++resource++move_16x16.gif" />'
 					          +'</a>');
