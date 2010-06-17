@@ -28,7 +28,7 @@
     <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
 
     <div tal:replace="structure view/batching" tal:condition="not:view/show_all"/>
-	<span id="js_baseurl" tal:content="view/base_url" style="display:none"/>
+	<!-- span id="js_baseurl" tal:content="view/base_url" style="display:none"/ -->
     <table class="listing"
            id="listing-table"
            summary="Content listing"

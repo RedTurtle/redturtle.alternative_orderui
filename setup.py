@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.1'
+version = '0.2.0'
 
 setup(name='redturtle.alternative_orderui',
       version=version,
@@ -15,7 +15,7 @@ setup(name='redturtle.alternative_orderui',
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Development Status :: 3 - Alpha",
         ],
-      keywords='plone folder_contents order',
+      keywords='plone plonegov folder_contents order',
       author='RedTurtle Technology',
       author_email='sviluppoplone@redturtle.net',
       url='http://svn.plone.org/svn/collective/redturtle.alternative_orderui',

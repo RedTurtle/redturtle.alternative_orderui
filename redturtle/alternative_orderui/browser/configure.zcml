@@ -4,12 +4,17 @@
     xmlns:five="http://namespaces.zope.org/five">
 
     <!-- Folder contents -->
-    <browser:page
+    <!--browser:page
         for="OFS.interfaces.IFolder"
         class=".foldercontents.FolderContentsView"
         name="folder_contents"
         template="foldercontents.pt"
-        permission="cmf.ListFolderContents" />        
+        permission="cmf.ListFolderContents" /-->        
+
+    <browser:resource
+        name="nokss_order.kss"
+        file="nokss_order.kss"
+        />
 
     <browser:resource
         name="move_16x16.gif"

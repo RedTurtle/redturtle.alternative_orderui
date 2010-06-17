@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from zope.app.pagetemplate import ViewPageTemplateFile
 from plone.app.content.batching import Batch
 from plone.memoize import instance

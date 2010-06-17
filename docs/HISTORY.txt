@@ -1,13 +1,14 @@
 Changelog
 =========
 
-0.1.1 (Unreleased)
+0.2.0 (Unreleased)
 ------------------
 
 * added z3c.autoinclude support [keul]
+* i18n Javascript support [keul]
 
 0.1.0 Unreleased (2010-01-11)
 -----------------------------
 
-* initial (un)release
+* initial (un)release - you can find this only on SVN
 

@@ -2,14 +2,14 @@
  * Javascript code for the reordering support
  */
 
-registerPloneFunction(function () {
-	var js_baseurl = jq("#js_baseurl").text();
+jq(document).ready(function () {
+	var js_baseurl = jq("head base").attr('href');
 	var querystring = window.location.search;
 	var qspos = querystring.indexOf("pagenumber");
 	var qsn = '';
 	if (qspos>-1) {
 		// read the pagenumber argument
-		 qsn = "&pagenumber="+querystring.substr(qspos+11, qspos+12);
+		qsn = "&pagenumber="+querystring.substr(qspos+11, qspos+12);
 	}
 	jq("#listing-table tr").find("td:first").each(function (i) {
 		jq(this).find("input:first").after('&nbsp;<span class="discreet order-index">'+(i+1)+'</span>');			
@@ -18,10 +18,9 @@ registerPloneFunction(function () {
 	jq("#listing-table tr").find("td:last")
 	    .each(function (i) {
 			var el = jq(this);
-			el.empty()
-				.append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
-			          +'<img alt="" src="++resource++move_16x16.gif" />'
-					  +'</a>');
+			el.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
+			                  +'<img alt="" src="++resource++move_16x16.gif" />'
+					          +'</a>');
 			jq(".reorder-cmd", el).click(function(event) {
 				// event.preventDefault();
 				var choosen = prompt("Inserisci la nuova posizione per l'elemento alla posizione "+(i+1));
@@ -38,3 +37,14 @@ registerPloneFunction(function () {
 			});
 		});
 });
+
+/*
+kukit.actionsGlobalRegistry.register("plone-initDragAndDrop",
+    function(oper) {
+		// NOP!
+});
+*/
+
+// Disable KSS!!!
+if (window.kukit && window.kukit.actionsGlobalRegistry && window.kukit.actionsGlobalRegistry.content)
+	kukit.actionsGlobalRegistry.content['plone-initDragAndDrop'] = function() {};
