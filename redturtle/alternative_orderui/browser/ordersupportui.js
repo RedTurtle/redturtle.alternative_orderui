@@ -2,8 +2,16 @@
  * Javascript code for the reordering support
  */
 
+jQuery.alternative_orderui = {
+    messages: {
+        en: "Fill the new position for the content thats now is at position ",
+        it: "Inserisci la nuova posizione per l'elemento alla posizione "
+    }
+};
+
 jq(document).ready(function () {
 	var js_baseurl = jq("head base").attr('href');
+	var lang = jq("html").attr('lang') || 'en';
 	var querystring = window.location.search;
 	var qspos = querystring.indexOf("pagenumber");
 	var qsn = '';
@@ -46,12 +54,13 @@ jq(document).ready(function () {
 			
 			var el = jq(this);
 			var elId = el.parents("tr:first").children("td:first").find(":checkbox").attr("id").replace("cb_","");
+			var title = el.parents("tr:first").children("td:eq(1)").find("a").text().strip();
 			el.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
 			                  +'<img alt="" src="++resource++move_16x16.gif" />'
 					          +'</a>');
 			jq(".reorder-cmd", el).click(function(event) {
 				//event.preventDefault();
-				var choosen = prompt("Inserisci la nuova posizione per l'elemento alla posizione "+ (index+1));
+				var choosen = prompt(jq.alternative_orderui.messages[lang] + (index+1) + " (" + title + ")");
 				if (choosen != null) {
 					var v = parseInt(choosen)-1;
 					var upOrDown = (v<index?'up':'down');
