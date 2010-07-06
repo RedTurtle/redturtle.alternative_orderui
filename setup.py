@@ -5,7 +5,7 @@ version = '0.2.0'
 
 setup(name='redturtle.alternative_orderui',
       version=version,
-      description="An alternative order UI supporto for contents view in Plone",
+      description="An alternative order UI support for contents view in Plone",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -18,7 +18,7 @@ setup(name='redturtle.alternative_orderui',
       keywords='plone plonegov folder_contents order',
       author='RedTurtle Technology',
       author_email='sviluppoplone@redturtle.net',
-      url='http://svn.plone.org/svn/collective/redturtle.alternative_orderui',
+      url='http://plone.org/products/redturtle.alternative_orderui',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['redturtle'],
