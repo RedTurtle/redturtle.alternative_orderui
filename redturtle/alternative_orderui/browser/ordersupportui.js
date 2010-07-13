@@ -41,8 +41,7 @@ jq(document).ready(function () {
 		jq(this).find("input:first").after('&nbsp;<span class="discreet order-index">'+(index+1)+'</span>');			
 	});
 	
-	jq("#listing-table tbody tr").find("td:last")
-	    .each(function (i) {
+	jq("#listing-table tbody tr").each(function (i) {
 			// Defining index
 			var index = 0;
 			if (pageNumber>1) {
@@ -52,13 +51,14 @@ jq(document).ready(function () {
 				index = i;
 			}
 			
-			var el = jq(this);
-			var elId = el.parents("tr:first").children("td:first").find(":checkbox").attr("id").replace("cb_","");
-			var title = jq.trim(el.parents("tr:first").children("td:eq(1)").find("a").text());
-			el.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
+			var row = jq(this);
+			var controlCell = row.find("td.draggable", row);
+			var elId = row.children("td.notDraggable").find(":checkbox").attr("id").replace("cb_","");
+			var title = jq.trim(row.children("td.notDraggable").next(":first").find("a").text());
+			controlCell.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
 			                  +'<img alt="" src="++resource++move_16x16.gif" />'
 					          +'</a>');
-			jq(".reorder-cmd", el).click(function(event) {
+			jq(".reorder-cmd", controlCell).click(function(event) {
 				//event.preventDefault();
 				var choosen = prompt(jq.alternative_orderui.messages[lang] + (index+1) + " (" + title + ")");
 				if (choosen != null) {
