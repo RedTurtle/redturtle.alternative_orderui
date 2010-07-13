@@ -60,7 +60,7 @@ jq(document).ready(function () {
 					          +'</a>');
 			jq(".reorder-cmd", controlCell).click(function(event) {
 				//event.preventDefault();
-				var choosen = prompt(jq.alternative_orderui.messages[lang] + (index+1) + " (" + title + ")");
+				var choosen = prompt(jq.alternative_orderui.messages[lang] + (index+1) + " (" + title + ")", "");
 				if (choosen != null) {
 					var v = parseInt(choosen)-1;
 					var upOrDown = (v<index?'up':'down');

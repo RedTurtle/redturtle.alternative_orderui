@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.2.1'
+version = '0.3.0'
 
 setup(name='redturtle.alternative_orderui',
       version=version,
@@ -12,6 +12,7 @@ setup(name='redturtle.alternative_orderui',
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
+        "Programming Language :: JavaScript",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Development Status :: 4 - Beta",
         ],

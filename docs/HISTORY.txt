@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.1 (Unreleased)
+0.3.0 (Unreleased)
 ------------------
 
 * once again the error of using *trim* or *strip* Javascript API (that Firefox support both).
@@ -9,6 +9,7 @@ Changelog
 * changed icon [keul]
 * the code is more general, robust and less based on the default Plone 3 theme
   (also works with Sunburst theme now) [keul]
+* basic Javascript prompt now put default (empty value), now less ugly on IE [keul]
 
 __ http://api.jquery.com/jQuery.trim
 
