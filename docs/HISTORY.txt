@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.2.1 (2010-07-13)
+------------------
+
+* once again the error of using *trim* or *strip* Javascript API (that Firefox support both).
+  Tired of this now I'm using `jQuery.trim`__ [keul]
+
+__ http://api.jquery.com/jQuery.trim
+
 0.2.0 (2010-07-06)
 ------------------
 

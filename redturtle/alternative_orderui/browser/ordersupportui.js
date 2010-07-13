@@ -41,7 +41,7 @@ jq(document).ready(function () {
 		jq(this).find("input:first").after('&nbsp;<span class="discreet order-index">'+(index+1)+'</span>');			
 	});
 	
-	jq("#listing-table tr").find("td:last")
+	jq("#listing-table tbody tr").find("td:last")
 	    .each(function (i) {
 			// Defining index
 			var index = 0;
@@ -54,7 +54,7 @@ jq(document).ready(function () {
 			
 			var el = jq(this);
 			var elId = el.parents("tr:first").children("td:first").find(":checkbox").attr("id").replace("cb_","");
-			var title = el.parents("tr:first").children("td:eq(1)").find("a").text().trim();
+			var title = jq.trim(el.parents("tr:first").children("td:eq(1)").find("a").text());
 			el.empty().append('&nbsp;<a href="javascript:;" class="reorder-cmd">'
 			                  +'<img alt="" src="++resource++move_16x16.gif" />'
 					          +'</a>');
