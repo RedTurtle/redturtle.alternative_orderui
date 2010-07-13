@@ -30,7 +30,7 @@ jq(document).ready(function () {
 		pageSize = parseInt(previous.match(pageSizeRegExp));
 	}
 
-	jq("#listing-table tr").find("td:first").each(function (i) {
+	jq("#listing-table tr").each(function (i) {
 		var index = 0;
 		if (pageNumber>1) {
 			index = i + (pageNumber-1)*pageSize;
@@ -38,7 +38,7 @@ jq(document).ready(function () {
 		else {
 			index = i;
 		}
-		jq(this).find("input:first").after('&nbsp;<span class="discreet order-index">'+(index+1)+'</span>');			
+		jq(this).find("td.notDraggable input:first").after('&nbsp;<span class="discreet order-index">'+(index+1)+'</span>');			
 	});
 	
 	jq("#listing-table tbody tr").each(function (i) {

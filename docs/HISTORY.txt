@@ -1,13 +1,14 @@
 Changelog
 =========
 
-0.2.1 (2010-07-13)
+0.2.1 (Unreleased)
 ------------------
 
 * once again the error of using *trim* or *strip* Javascript API (that Firefox support both).
   Tired of this now I'm using `jQuery.trim`__ [keul]
 * changed icon [keul]
-* the code is more general, robust and less based on the default Plone 3 theme [keul]
+* the code is more general, robust and less based on the default Plone 3 theme
+  (also works with Sunburst theme now) [keul]
 
 __ http://api.jquery.com/jQuery.trim
 
