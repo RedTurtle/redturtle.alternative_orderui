@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.3.0 (Unreleased)
+0.3.0 (2010-07-14)
 ------------------
 
 * once again the error of using *trim* or *strip* Javascript API (that Firefox support both).
