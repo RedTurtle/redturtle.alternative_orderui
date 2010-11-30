@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0'
+version = '0.4.0'
 
 setup(name='redturtle.alternative_orderui',
       version=version,
@@ -14,7 +16,7 @@ setup(name='redturtle.alternative_orderui',
         "Programming Language :: Python",
         "Programming Language :: JavaScript",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         ],
       keywords='plone plonegov folder_contents order',
       author='RedTurtle Technology',
@@ -33,5 +35,4 @@ setup(name='redturtle.alternative_orderui',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      paster_plugins = ["ZopeSkel"],
       )

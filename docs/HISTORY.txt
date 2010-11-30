@@ -1,6 +1,17 @@
 Changelog
 =========
 
+0.4.0 (2010-11-30)
+------------------
+
+* Code clean with JSLint [keul]
+* Added support for "reverse" parameter in "*folder_position*" script.
+  The internal called function "*orderObject*" support it, but not Plone.
+  This way this is compatible also with products like `collective.sortmyfolder`__ [keul]
+* Egg cleaned [keul]
+
+__ http://pypi.python.org/pypi/collective.sortmyfolder
+
 0.3.0 (2010-07-14)
 ------------------
 
