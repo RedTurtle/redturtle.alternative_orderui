@@ -7,10 +7,11 @@ Changelog
 * Code clean with JSLint [keul]
 * Added support for "reverse" parameter in "*folder_position*" script.
   The internal called function "*orderObject*" support it, but not Plone.
-  This way this is compatible also with products like `collective.sortmyfolder`__ [keul]
+  This way this is compatible also with products like `collective.sortmyfolder`__ (see also `#11317`__) [keul]
 * Egg cleaned [keul]
 
 __ http://pypi.python.org/pypi/collective.sortmyfolder
+__ http://dev.plone.org/plone/ticket/11317
 
 0.3.0 (2010-07-14)
 ------------------
@@ -36,4 +37,3 @@ __ http://api.jquery.com/jQuery.trim
 -----------------------------
 
 * initial (un)release - you can find this only on SVN
-
