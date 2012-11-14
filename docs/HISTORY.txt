@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.0 (unreleased)
+0.5.0 (2012-11-14)
 ------------------
 
 * Added uninstall profile [micecchi]
