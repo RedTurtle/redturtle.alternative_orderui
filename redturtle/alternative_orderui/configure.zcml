@@ -22,4 +22,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <!-- Uninstall profile -->
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Alternative UI for sorting folders: Uninstall"
+      directory="profiles/uninstall"
+      description="Unistall profile for another folder_contents view"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 </configure>
